@@ -179,6 +179,9 @@ figure:hover {
 .fa-brands {
   padding-right: 1em;
 }
+.fa-brands:hover {
+  color: #5F6F94;
+}
 /* Footer */
 footer p {
   font-size: 1.5em;
