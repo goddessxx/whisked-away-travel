@@ -6,34 +6,137 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Whisked Away Travel</title>
     <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/8d81142740.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <nav>
-      <img src="" alt="" id="logo" />
-    </nav>
-    <header>
-      <h1>Lose Yourself In Costa Rica</h1>
-      <button>Book Now</button>
-      <button>Learn More</button>
-    </header>
-    <div id="tour-guides">
-      <h1>Top 5 Tour Guides</h1>
-      <h4>Anna May</h4>
-      <p></p>
-      <h4>Patrick Star</h4>
-      <p></p>
-      <h4>Joanna Mackin</h4>
-      <p></p>
-      <h4>Lena Sears</h4>
-      <p></p>
-      <h4>Karl Harth</h4>
-      <p></p>
+    <div id="landing-page">
+      <nav>
+        <img src="images/logo/Whisked Away Travels-1.png" alt="" id="logo" />
+      </nav>
+      <header>
+        <h1>Lose Yourself In Costa Rica</h1>
+        <button class="header-btn book-btn">Book Now</button>
+        <button class="header-btn learn-btn">Learn More</button>
+      </header>
     </div>
-    <div id="popular-spots"></div>
-    <img src="" alt="" />
-    <img src="" alt="" />
-    <img src="" alt="" />
-    <img src="" alt="" />
-    <footer><p>Whisked Away Travels &copy;</p></footer>
+    <div id="tour-guides">
+      <h1>Tour Guides</h1>
+      <div class="tour-container anna">
+        <img
+          src="images/tour guides images/chermiti-mohamed-oVi586BZ2lY-unsplash.jpg"
+          alt=""
+        />
+        <h2>Anna May</h2>
+        <p>
+          I've been giving tours for 5 years now, if you love clubbing you will
+          have a blast with me!
+        </p>
+        <button class="tour-btn anna-btn">Book Tour With Anna</button>
+      </div>
+      <div class="tour-container patrick">
+        <img
+          src="images/tour guides images/christian-buehner-DItYlc26zVI-unsplash.jpg"
+          alt=""
+        />
+        <h2>Patrick Star</h2>
+        <p>
+          Every tour I host, I make the expierance unique and exciting! Been in
+          the tour guide business for 10 years, every group left with a smile!
+        </p>
+        <button class="tour-btn patrick-btn">Book Tour With Parick</button>
+      </div>
+      <div class="tour-container joanna">
+        <img
+          src="images/tour guides images/kim-carpenter-IHIgnhLvz5Q-unsplash.jpg"
+          alt=""
+        />
+        <h2>Joanna Mackin</h2>
+        <p>
+          After visiting several different locations in Costa Rica for over 2
+          years, I feel confident that I will be able to show my guests all that
+          Costa Rica has to offer!
+        </p>
+        <button class="tour-btn joanna-btn">Book Tour With Joanna</button>
+      </div>
+      <div class="tour-container lena">
+        <img
+          src="images/tour guides images/vinicius-wiesehofer-UOavP_Z38lE-unsplash.jpg"
+          alt=""
+        />
+        <h2>Lena Gutiérrez</h2>
+        <p>
+          I was born and raised in Costa Rica, and have vistited the most
+          popular spots here. As well as places that only locals like myself
+          know of, I offer my guests an amazing opportunity to be able to see
+          the secrets of Costa Rica.
+        </p>
+        <button class="tour-btn lena-btn">Book Tour With Lena</button>
+      </div>
+    </div>
+    <div id="popular-spots">
+      <h1>Most visited by groups!</h1>
+      <div id="images">
+        <figure>
+          <img
+            src="images/popular spots/272980129_454827266340673_4054877940304918526_n.jpg"
+            alt=""
+            onclick="window.open('https://www.facebook.com/republikloungecr/','_blank')"
+          />
+          <figcaption>Republik Lounge</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="images/popular spots/beach-club.png"
+            alt=""
+            onclick="window.open('https://www.langostabeachclub.com','_blank')"
+          />
+          <figcaption>Langosta Beach Club</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="images/popular spots/Manuel Antonio 504.jpg"
+            alt=""
+            onclick="window.open('https://www.restaurantmanuelantonio.com','_blank')"
+          />
+          <figcaption>Colina's Wood Fired Steaks and Pizza</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="images/popular spots/Superman-Photo-scaled.avif"
+            alt=""
+            onclick="window.open('https://diamanteecoadventurepark.com/','_blank')"
+          />
+          <figcaption>Diamante Eco Adventure Park</figcaption>
+        </figure>
+      </div>
+    </div>
+    <div id="about-us">
+      <h1>Why Whisked Away Travel?</h1>
+      <p>
+        Whisked Away Travel was created so that traveling to Costa Rica is
+        easier. Our tour guides are employed through us, and as you have read
+        above, their groups have amazing experiences. Whisked Away Travel is
+        geared towards adults, many of the spots our tour guides go to include
+        alcohol and an adult atmosphere. You must be 18+ to travel with us!
+      </p>
+      <img
+        src="images/about us images/jorge-rosales-jldjmVGi4AM-unsplash.jpg"
+        alt=""
+        id="about-img"
+      />
+      <div class="socials">
+        <h2>Check out our socials</h2>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-square-instagram"></i>
+        <i class="fa-brands fa-square-facebook"></i>
+      </div>
+    </div>
+    <footer>
+      <p>Whisked Away Travel &copy; 2022</p>
+    </footer>
+    <script src="main.js"></script>
   </body>
 </html>

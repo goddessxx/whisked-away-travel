@@ -1,0 +1,221 @@
+/* Imports */
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital@1&display=swap");
+/* Nav */
+nav {
+  display: flex;
+  flex-direction: column;
+  animation: fade-in 3s 1;
+}
+#logo {
+  width: 30em;
+  height: 30em;
+  position: absolute;
+  top: -12em;
+  left: -2em;
+}
+/* All Sections */
+body {
+  font-family: "Old Standard TT", serif;
+}
+body,
+p,
+h1 {
+  margin: 0;
+}
+/* Header */
+#landing-page {
+  background-image: url(images/have-fun-do-good-1092hWhdYu0-unsplash.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+header {
+  margin-top: 15em;
+  margin-left: 2em;
+  text-align: center;
+}
+header h1 {
+  font-size: 3.5em;
+  color: #fcf8e8;
+  animation: slide-in 2s 1;
+}
+.header-btn {
+  font-family: "Old Standard TT", serif;
+  font-size: 1.3em;
+  border-radius: 6%;
+  border-style: none;
+  width: 6.5em;
+  height: 2.3em;
+  background-color: #cfd2cf;
+  color: #3c4048;
+  animation: fade-in 3s 1;
+  margin: 5em 0.5em 0 2em;
+}
+.header-btn:hover {
+  background-color: #395b64;
+  color: #eaeaea;
+  animation: jump 2s infinite;
+}
+/* Tour Guides */
+#tour-guides {
+  background: linear-gradient(to bottom, #e0eafc, #cfdef3);
+  height: auto;
+  padding: 0 1em 0 1em;
+  color: #474744;
+}
+#tour-guides h1 {
+  font-size: 3.5em;
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  animation: slide-in 2s 1;
+}
+.tour-btn {
+  font-family: "Old Standard TT", serif;
+  font-size: 1.2em;
+  border-radius: 6%;
+  border-style: none;
+  width: 8em;
+  height: 2.7em;
+  background-color: #f0e3c4;
+  color: #3c4048;
+  margin-top: 2em;
+  padding-top: 0.3em;
+}
+.tour-btn:hover {
+  background-color: #daa592;
+  color: #f9f7f7;
+  animation: jump 2s infinite;
+}
+.tour-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 5em;
+  animation: fade-in 3s 1;
+  animation-fill-mode: both;
+  visibility: hidden;
+}
+.tour-container p {
+  text-align: center;
+  font-size: 1.5em;
+  margin: 0 4em 0 4em;
+}
+.tour-container h2 {
+  font-size: 1.7em;
+}
+.tour-container img {
+  width: 15em;
+  border-radius: 30%;
+}
+/* Popular Spots */
+#popular-spots {
+  background: linear-gradient(to bottom, #e0eafc, #cfdef3);
+  height: auto;
+  color: #474744;
+}
+#images {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  animation: fade-in 3s 1;
+}
+figcaption {
+  font-size: 2em;
+  text-align: center;
+  padding-top: 0.5em;
+}
+figure:hover {
+  animation: jump 2s infinite;
+}
+#popular-spots img {
+  width: 31em;
+  height: 32em;
+  border-radius: 4%;
+  margin-top: 3em;
+}
+#popular-spots h1 {
+  font-size: 3.5em;
+  text-align: center;
+  padding-top: 1em;
+  animation: slide-in 2s 1;
+}
+/* About Us */
+#about-us {
+  background: linear-gradient(to bottom, #e0eafc, #cfdef3);
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  animation: fade-in 3s 1;
+  visibility: hidden;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+  justify-content: center;
+  flex-direction: column;
+}
+#about-us h1 {
+  font-size: 3.5em;
+  color: #474744;
+  animation: slide-in 2s 1;
+  text-align: center;
+  padding-top: 1em;
+}
+#about-us p {
+  font-size: 1.5em;
+  text-align: center;
+  padding-top: 2em;
+}
+#about-img {
+  width: 25em;
+  margin-top: 3em;
+  border-radius: 4%;
+  align-self: center;
+}
+.socials {
+  text-align: center;
+  margin: auto;
+  color: #474744;
+  font-size: 2em;
+}
+.fa-brands {
+  padding-right: 1em;
+}
+/* Footer */
+footer p {
+  font-size: 1.5em;
+  animation: fade-in 3s 1;
+  color: #474744;
+  text-align: center;
+  background: linear-gradient(to top, #e0eafc, #cfdef3);
+  padding-top: 4em;
+}
+/* Animations */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+@keyframes slide-in {
+  from {
+    position: relative;
+    left: -20em;
+  }
+  to {
+    position: relative;
+    left: 0;
+  }
+}
+@keyframes jump {
+  0% {
+    transform: translateX(0px) rotate(0deg);
+  }
+  50% {
+    transform: translatey(20px) rotateX(-25deg);
+  }
+  100% {
+    transform: translateX(0px) rotate(0deg);
+  }
+}
